@@ -14,7 +14,7 @@ namespace CSharpKatas
     }
 
     [TestFixture]
-    [Ignore]
+    [Ignore("Not yet implemented")]
     public class Test
     {
         [Test]

@@ -39,7 +39,7 @@ namespace CSharpKatas
     }
 
     [TestFixture]
-    [Ignore]
+    [Ignore("Not yet implemented")]
     public class TestGameOfLife
     {
         [Test]
