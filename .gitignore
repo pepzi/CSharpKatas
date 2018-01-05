@@ -111,3 +111,4 @@ UpgradeLog*.XML
 /.vs/CSharpKatas/v15/Server/sqlite3/storage.ide
 /.vs/CSharpKatas/v15/Server/sqlite3/db.lock
 /.vs/slnx.sqlite
+/.vs/config/applicationhost.config
