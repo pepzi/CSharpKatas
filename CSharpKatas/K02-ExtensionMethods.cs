@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using NUnit.Framework;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -20,11 +21,22 @@ namespace CSharpKatas
     }
     #endregion
 
-    public static class SomeoneElsesClassCellExtension
+    public static class ExtensionMethods
     {
-        public static int FindNumberOrDefault(this SomeoneElsesClass someoneElsesClass, int number)
+        public static int? FindNumberOrDefault(this SomeoneElsesClass someoneElsesClass, int number)
         {
-            return number;
+            try
+            {
+                if (someoneElsesClass.Numbers.Contains(number))
+                    return number;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+
+            return null;
         }
     }
  
