@@ -17,7 +17,7 @@ namespace CSharpKatas
     }
 
     [TestFixture]
-    [Ignore]
+    [Ignore("Not yet implemented")]
     public class LinqProvidersTest
     {
         [Test]
